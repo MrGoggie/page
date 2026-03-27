@@ -570,7 +570,7 @@ function openModal(id){
   // SPONSORS
   const ss=document.getElementById('sponsorSection');
   if(sponsors.length){
-    ss.innerHTML=`<div class="sponsor-title">— SPONSORED BY —</div>
+    ss.innerHTML=`<div class="sponsor-title">— Recommend for best odds —</div>
     <div class="sponsor-grid">${sponsors.map(s=>`
       <div class="sponsor-item" onclick="${s.url?`window.open('${s.url}','_blank')`:''}">
         ${s.img?`<img src="${s.img}" alt="${s.name}" onerror="this.parentElement.innerHTML='<div class=no-img>${s.name}</div>'">`:`<div class="no-img">${s.name}</div>`}
